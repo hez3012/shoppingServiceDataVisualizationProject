@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Bash(curl *)",
+      "Bash(python -c \"import sys,json; d=sys.stdin.read\\(\\); print\\(d[:2000]\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('kpis:', d['kpis']\\); print\\('q1 labels:', d['q1']['labels'][:3]\\); print\\('q2 labels:', d['q2']['labels'][:2]\\); print\\('q5 labels:', d['q5']['labels'][:2]\\); print\\('trend:', d['trend']\\)\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('Q3 period — q3:', d['q3'], '| q4:', d['q4'], '| q1:', d['q1']\\)\")",
+      "PowerShell(Copy-Item *)"
+    ]
+  }
+}

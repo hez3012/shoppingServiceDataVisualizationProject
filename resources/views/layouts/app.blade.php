@@ -722,6 +722,28 @@
     * { position: relative; z-index: 1; }
     .bg-orb { z-index: 0; }
     canvas { display: block; }
+
+    /* ════════════════════════════════════════════════
+       MOBILE RESPONSIVE
+    ════════════════════════════════════════════════ */
+    @media (max-width: 599px) {
+        .sv-topnav { padding: .625rem 1rem; gap: .5rem; }
+        .sv-brand-name { display: none; }
+        .btn-txt { display: none; }
+        .sv-btn-glass { padding: .4375rem .6rem; }
+        .sv-nav-actions { gap: .375rem; }
+
+        .about-grid { grid-template-columns: 1fr; }
+        .about-modal { padding: 1.25rem; border-radius: 16px; }
+
+        .sv-kpi { padding: 1rem 1.125rem .875rem; }
+        .sv-kpi-value { font-size: 1.375rem; letter-spacing: -.025em; }
+    }
+
+    @media (max-width: 399px) {
+        .sv-kpi-value { font-size: 1.2rem; }
+        .sv-kpi-label { font-size: .625rem; }
+    }
     </style>
 
     @stack('styles')
@@ -745,7 +767,7 @@
     <div class="sv-nav-actions">
         <button class="sv-btn-glass" id="about-btn" type="button">
             <i class="bi bi-info-circle-fill"></i>
-            About Us
+            <span class="btn-txt">About Us</span>
         </button>
         <button class="sv-theme-toggle" id="theme-toggle" type="button" title="Toggle dark mode" aria-label="Toggle dark mode">
             <i class="bi bi-moon-stars-fill" id="theme-icon"></i>

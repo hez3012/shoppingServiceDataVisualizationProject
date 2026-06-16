@@ -79,6 +79,19 @@
     .kpi-grid { grid-template-columns: repeat(2, 1fr); }
     .sv-hero { padding: 1.5rem 1rem 1.25rem; }
     .sv-section { padding: 0 1rem 1.5rem; }
+    .sv-hero-filters { width: 100%; }
+    .sv-filter-bar { justify-content: flex-start; }
+    .ch-220 { height: 180px; }
+    .ch-260 { height: 220px; }
+    .ch-320 { height: 280px; }
+    .sv-section-label { margin-top: .5rem; }
+}
+@media (max-width: 399px) {
+    .sv-filter-bar { padding: .5rem .625rem; gap: .375rem; }
+    .sv-period-btn { padding: .25rem .5rem; font-size: .6875rem; }
+    .ch-220 { height: 160px; }
+    .ch-260 { height: 200px; }
+    .ch-320 { height: 260px; }
 }
 </style>
 @endpush
